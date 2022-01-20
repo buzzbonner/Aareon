@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AareonTechnicalTest", "AareonTechnicalTest\AareonTechnicalTest.csproj", "{1FB831BF-946F-4526-AB25-E5CAFC6A8E4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AareonTechnicalTest", "AareonTechnicalTest\AareonTechnicalTest.csproj", "{1FB831BF-946F-4526-AB25-E5CAFC6A8E4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AareonTechnicalTest.Tests", "AareonTechnicalTest.Tests\AareonTechnicalTest.Tests.csproj", "{E46C0B0C-69A8-432B-9ABB-086E0B62740A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1FB831BF-946F-4526-AB25-E5CAFC6A8E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FB831BF-946F-4526-AB25-E5CAFC6A8E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FB831BF-946F-4526-AB25-E5CAFC6A8E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46C0B0C-69A8-432B-9ABB-086E0B62740A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46C0B0C-69A8-432B-9ABB-086E0B62740A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46C0B0C-69A8-432B-9ABB-086E0B62740A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46C0B0C-69A8-432B-9ABB-086E0B62740A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,5 @@
+using AareonTechnicalTest.Repositories;
+using AareonTechnicalTest.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +22,11 @@ namespace AareonTechnicalTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IPersonRepository, PersonRepository>();
+            services.AddTransient<ITicketRepository, TicketRepository>();
+            services.AddTransient<INoteRepository, NoteRepository>();
+            services.AddTransient<ITicketService, TicketService>();
+            services.AddTransient<INoteService, NoteService>();
 
             services.AddControllers();
             services.AddDbContext<ApplicationContext>(c => c.UseSqlite());
@@ -38,6 +45,8 @@ namespace AareonTechnicalTest
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AareonTechnicalTest v1"));
             }
+
+            app.UseMiniProfiler();
 
             app.UseHttpsRedirection();
 

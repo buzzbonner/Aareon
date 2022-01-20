@@ -2,15 +2,15 @@
 
 namespace AareonTechnicalTest.Models
 {
-    public class Person
+    public class Note
     {
         [Key]
         public int Id { get; set; }
 
-        public string Forename { get; set; }
+        public string Description { get; set; }
 
-        public string Surname { get; set; }
+        public int PersonId { get; set; }
 
-        public bool IsAdmin { get; set; }
+        public int TicketId { get; set; }
     }
 }
