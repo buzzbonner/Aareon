@@ -11,6 +11,12 @@ namespace AareonTechnicalTest.Models
                 {
                     entity.HasKey(e => e.Id);
                 });
+
+            modelBuilder.Entity<Note>(
+                entity =>
+                {
+                    entity.HasKey(e => e.Id);
+                });
         }
     }
 }
